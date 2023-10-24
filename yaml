@@ -1,0 +1,18 @@
+name: Your CI/CD Workflow
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4  # Make sure to use a version that is compatible with Node.js 20
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20  # Specify Node.js 20
+
+      - name: Install dependencies
+        run: npm install
