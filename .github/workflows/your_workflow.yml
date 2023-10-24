@@ -2,7 +2,7 @@
 
 # Set up your repository
 git clone https://github.com/png3103/QuizForUyen.git
-cd your-repo
+cd QuizForUyen
 
 # Install dependencies (if needed)
 npm install
