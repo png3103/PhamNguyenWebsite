@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Set up your repository
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/png3103/QuizForUyen.git
 cd your-repo
 
 # Install dependencies (if needed)
