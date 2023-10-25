@@ -77,6 +77,27 @@
         <p>khoảnh khắc nào em thấy vui nhất khi yêu anh ?</p>
     </div>
 
-    
+    <button onclick="showImages()">Phần thưởng của em</button>
+
+    <div id="result">
+        <h2>Results</h2>
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <p>Em luôn là người chiến thắng, Anh yêu em
+            Món quà của em ở đằng sau đó
+        </p>
+    </div>
+
+    <script>
+        function showImages() {
+            var questionContainers = document.querySelectorAll(".question-container");
+            for (var i = 0; i < questionContainers.length; i++) {
+                questionContainers[i].style.display = "none";
+            }
+
+            var resultContainer = document.getElementById("result");
+            resultContainer.style.display = "block";
+        }
+    </script>
 </body>
 </html>
